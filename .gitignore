@@ -1,0 +1,5 @@
+#Extra files that shouldn't be uploaded
+**/experiment
+
+#3rd Party lib
+Mobile_Detect.php
