@@ -15,17 +15,20 @@
     $email = $_POST["email"];
     $phone = $_POST["phone"];
     $message = $_POST["message"];
+    $nobotsplz = $_POST["username"];
 
     //validate form
+    if ($nobotsplz)
+      $errorMsg .= "<p>Unable to process request at this time</p>";
     if (!$name)
-      $errorMsg .= "<p>Name</p>";
+      $errorMsg .= "<p>Missing Name</p>";
     if (!filter_var($email, FILTER_VALIDATE_EMAIL))
-      $errorMsg .= "<p>Email</p>";
+      $errorMsg .= "<p>Missing or invalid Email</p>";
 
     //construct alert message and send email
     if ($errorMsg) {
       $errorType = "alert-danger";
-      $errorMsg = "<p><strong>Fields missing or invalid</strong></p>".$errorMsg;
+      $errorMsg = "<p><strong>There was a problem</strong></p>".$errorMsg;
     }
     else {
       //send email
@@ -73,7 +76,6 @@
 <!-- Form -->
 <form method="post">
   <div class="form-group">
-    <!--<label for="name-field">Name</label>-->
     <input type="text" class="form-control" id="name-field" name="name" placeholder="Student Name(s)"
       value="<?php echo $name; ?>"
     >
@@ -84,20 +86,21 @@
     >
   </div>
   <div class="form-group">
-    <!--<label for="email-field">Email</label>-->
     <input type="email" class="form-control" id="email-field" name="email" placeholder="Email"
       value="<?php echo $email; ?>"
     >
   </div>
   <div class="form-group">
-    <!--<label for="phone-field">Phone</label>-->
     <input type="tel" class="form-control" id="phone-field" name="phone" placeholder="Phone Number (Optional)"
       value="<?php echo $phone; ?>"
     >
   </div>
   <div class="form-group">
-    <!--<label for="message-field">Message</label>-->
     <textarea class="form-control" id="message-field" name="message" rows="3" placeholder="Message (Optional)"><?php echo $message ?></textarea>
+  </div>
+  <div style="display:none">
+    <? /*Anti-bot field*/ ?>
+    <input type="test" name="username">
   </div>
   <input type="submit" class="btn btn-success" id="submit-btn">
 </form>
