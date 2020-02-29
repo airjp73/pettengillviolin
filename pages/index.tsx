@@ -3,6 +3,7 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import initTeachingLocations from '../maps/teaching-locations';
 import { useEffect } from 'react';
+import ContactForm from '../components/ContactForm';
 
 const Home = () => {
   useEffect(() => {
@@ -85,7 +86,7 @@ const Home = () => {
                 <div className="col-md-5 col-sm-12">
                   <a className="anchor" id="contact"></a>
                   <p className="lead">Sign your child up for lessons today</p>
-                  {/* TODO: Contact Form */}
+                  <ContactForm />
                 </div>
               </div>
             </div>
