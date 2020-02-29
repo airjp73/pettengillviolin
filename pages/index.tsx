@@ -17,15 +17,15 @@ const Home = () => {
 
         <div className="row" style={{ marginTop: '40px' }}>
           <div className="col-1" />
-          <div className="col-10">
+          <div className="col-10-m col-12-sm">
             <div className="box">
               <h1 className="display-4 text-center">
                 Violin Lessons for Everyone
               </h1>
 
               <div className="row">
-                <div className="col-3"></div>
-                <div className="col-6">
+                <div className="col-md-2"></div>
+                <div className="col-md-8 col-sm-12">
                   <hr className="my-4" />
                   <p className="quote-text">
                     Aaron is an outstanding violinist who has made learning the
@@ -43,7 +43,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="row">
-                <div className="col-7">
+                <div className="col-md-7 col-sm-12">
                   <img
                     className="intro-pic"
                     src="images/headshot.jpg"
@@ -82,7 +82,7 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-5">
+                <div className="col-md-5 col-sm-12">
                   <a className="anchor" id="contact"></a>
                   <p className="lead">Sign your child up for lessons today</p>
                   {/* TODO: Contact Form */}
