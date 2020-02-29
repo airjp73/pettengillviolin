@@ -1,10 +1,12 @@
 {
   "name": "pettengillviolin",
   "version": 2,
-  "env": {
-    "TWILIO_ACCOUNT_SID": "@twilio-account-sid",
-    "TWILIO_AUTH_TOKEN": "@twilio-auth-token",
-    "TWILIO_PHONE_NUMBER": "@twilio-phone-number",
-    "MY_PHONE_NUMBER": "@my-phone-number"
+  "build": {
+    "env": {
+      "TWILIO_ACCOUNT_SID": "@twilio-account-sid",
+      "TWILIO_AUTH_TOKEN": "@twilio-auth-token",
+      "TWILIO_PHONE_NUMBER": "@twilio-phone-number",
+      "MY_PHONE_NUMBER": "@my-phone-number"
+    }
   }
 }
