@@ -1,22 +1,13 @@
-function initMap() {
-  var map_center = {lat: 43.828049, lng: -70.528867};
-  var porter = {lat: 43.807791, lng: -70.888924};
-  var lewiston = {lat: 44.098295, lng: -70.214974};
-  var portland = {lat: 43.661821, lng: -70.255029};
+function initTeachingLocations() {
+  const lewiston = { lat: 44.098731, lng: -70.212383 };
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 9,
-    center: map_center
+    center: lewiston,
   });
-  var marker = new google.maps.Marker({
-    position: porter,
-    map: map
-  });
-  var marker2 = new google.maps.Marker({
+  new google.maps.Marker({
     position: lewiston,
-    map: map
-  });
-  var marker3 = new google.maps.Marker({
-    position: portland,
-    map: map
+    map: map,
   });
 }
+
+export default initTeachingLocations;
