@@ -34,8 +34,8 @@ function getPhone(phoneNumber: string) {
   else return phone(phoneNumber);
 }
 
-function buildMessage(body: RequestBody): string {
-  const { name, parentName, email, phone: phoneNumber, message } = body;
+function buildMessage(body: RequestBody, phoneNumber: string): string {
+  const { name, parentName, email, message } = body;
   const emailStr = email ? `Email: ${email}\n` : '';
   return (
     `Name: ${name}\n` +
@@ -61,7 +61,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   return twilioClient.messages
     .create({
-      body: buildMessage(body),
+      body: buildMessage(body, phoneNumber[0]),
       from: twilioPhone,
       to: myPhoneNumber,
     })
