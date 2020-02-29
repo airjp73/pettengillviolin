@@ -6,7 +6,8 @@
       "TWILIO_ACCOUNT_SID": "@twilio-account-sid",
       "TWILIO_AUTH_TOKEN": "@twilio-auth-token",
       "TWILIO_PHONE_NUMBER": "@twilio-phone-number",
-      "MY_PHONE_NUMBER": "@my-phone-number"
+      "MY_PHONE_NUMBER": "@my-phone-number",
+      "GOOGLE_MAPS_API_KEY": "@google-maps-api-key"
     }
   }
 }
