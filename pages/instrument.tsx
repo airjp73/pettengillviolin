@@ -65,13 +65,7 @@ const Instrument: React.FC = () => {
             Below is a map with a few local, reputable vendors that I know.
             Check them out!
           </p>
-          <div id="map" style={{ height: '400px', width: '100%' }}>
-            <script
-              async
-              defer
-              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQr2ybjzerGzM5LbrHVZD0SLXP-SDBaRE&libraries=places&callback=initMap"
-            ></script>
-          </div>
+          <div id="map" style={{ height: '400px', width: '100%' }}></div>
           <h4 className="content-header">Still have questions?</h4>
           <p className="text-center">
             <a href="contact.php" className="btn btn-outline-primary">

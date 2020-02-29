@@ -22,11 +22,6 @@ const Studio: React.FC = () => {
           <p>I teach at three locations in Southern Maine.</p>
           <div id="map" style={{ height: '400px', width: '100%' }}>
             <script src="teaching-locations.js"></script>
-            <script
-              async
-              defer
-              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQr2ybjzerGzM5LbrHVZD0SLXP-SDBaRE&libraries=places&callback=initMap"
-            ></script>
           </div>
         </div>
       </div>

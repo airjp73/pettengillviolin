@@ -25,6 +25,11 @@ const Head: React.FC = () => (
       integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
       crossOrigin="anonymous"
     ></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQr2ybjzerGzM5LbrHVZD0SLXP-SDBaRE&libraries=places&callback=initMap"
+    ></script>
   </NextHead>
 );
 
