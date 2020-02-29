@@ -1,6 +1,7 @@
 {
   "name": "pettengillviolin",
   "version": 2,
+  "alias": ["pettengillviolin.com"],
   "build": {
     "env": {
       "TWILIO_ACCOUNT_SID": "@twilio-account-sid",
