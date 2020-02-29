@@ -8,7 +8,7 @@ const NavLink: React.FC<{ href: string }> = ({ href, children }) => {
   return (
     <li className="nav-item">
       <Link href={href}>
-        <a className={cn('nav-link', { active: router.route === href })}>
+        <a className={cn('nav-link', { active: router.route === `/${href}` })}>
           {children}
         </a>
       </Link>
