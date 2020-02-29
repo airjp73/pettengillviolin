@@ -1,5 +1,8 @@
 const Footer: React.FC = () => (
-  <div className="footer" style={{ marginTop: '2rem' }}>
+  <div
+    className="footer"
+    style={{ marginTop: '2rem', position: 'sticky', top: '100%' }}
+  >
     <div className="footer-content sm-only">
       <img className="side-pic" src="images/landing-top.jpg" />
       <p>
