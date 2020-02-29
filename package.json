@@ -9,11 +9,18 @@
   },
   "dependencies": {
     "@types/classnames": "^2.2.9",
+    "@types/email-validator": "^1.0.6",
+    "@types/phone": "^2.4.0",
+    "@types/twilio": "^2.11.0",
     "classnames": "^2.2.6",
+    "dotenv": "^8.2.0",
+    "email-validator": "^2.0.4",
     "font-awesome": "^4.7.0",
     "next": "9.2.2",
+    "phone": "^2.4.8",
     "react": "16.13.0",
-    "react-dom": "16.13.0"
+    "react-dom": "16.13.0",
+    "twilio": "^3.39.5"
   },
   "devDependencies": {
     "@types/node": "^13.7.7",

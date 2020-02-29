@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 enum AlertType {
   SUCCESS = 'alert-success',
-  ERROR = 'alert-error',
+  ERROR = 'alert-danger',
 }
 
 interface AlertProps {
@@ -50,9 +50,25 @@ const ContactForm: React.FC = () => {
       {result && <Alert type={result.type}>{result.message}</Alert>}
 
       <form
-        onSubmit={event => {
+        onSubmit={async event => {
           event.preventDefault();
-          // do stuff?
+          setResult(null);
+          const res = await fetch('/api/sendContactForm', {
+            method: 'POST',
+            body: JSON.stringify({
+              name,
+              parentName,
+              email,
+              phone,
+              message,
+            }),
+          });
+          console.log(res);
+          const body = await res.json();
+          setResult({
+            type: res.ok ? AlertType.SUCCESS : AlertType.ERROR,
+            message: body.message,
+          });
         }}
       >
         <div className="form-group">
