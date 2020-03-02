@@ -22,9 +22,9 @@ const Nav: React.FC = () => (
     className="navbar navbar-expand-md navbar-light bg-light fixed-top"
   >
     <div className="col-3 text-center">
-      <a className="navbar-brand" href="/">
-        Pettengill Violin Studio
-      </a>
+      <Link href="/">
+        <a className="navbar-brand">Pettengill Violin Studio</a>
+      </Link>
     </div>
 
     <button

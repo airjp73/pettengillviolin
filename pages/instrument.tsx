@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import Head from '../components/Head';
 import initRentalMap from '../maps/rental';
+import Link from 'next/link';
 
 const Instrument: React.FC = () => {
   useEffect(() => {
@@ -57,7 +58,10 @@ const Instrument: React.FC = () => {
             <strong>Easy to vet: </strong>
             If you ask me about a local rental shop, chances are I will have
             heard of it or know someone who does. Just{' '}
-            <a href="contact.php">contact me</a> and I can help.
+            <Link href="contact">
+              <a>contact me</a>
+            </Link>{' '}
+            and I can help.
           </p>
           <p>
             So where do you start?
@@ -68,9 +72,9 @@ const Instrument: React.FC = () => {
           <div id="map" style={{ height: '400px', width: '100%' }}></div>
           <h4 className="content-header">Still have questions?</h4>
           <p className="text-center">
-            <a href="contact.php" className="btn btn-outline-primary">
-              Contact me and ask!
-            </a>
+            <Link href="contact">
+              <a className="btn btn-outline-primary">Contact me and ask!</a>
+            </Link>
           </p>
         </div>
       </div>

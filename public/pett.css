@@ -243,6 +243,10 @@ a.anchor {
   display: inline;
 }
 
+.foot-list > * + * {
+  margin-top: 0.5rem;
+}
+
 /*
   Table Stuff
 */
