@@ -98,13 +98,7 @@ const Home = () => {
           <div className="box bg-light col-12 col-md-8 col-lg-6">
             <h3 className="content-header">Convenient Location</h3>
             <p className="text-center">I teach in Lewiston, Maine.</p>
-            <div id="map" style={{ height: '400px', width: '100%' }}>
-              <script
-                async
-                defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQr2ybjzerGzM5LbrHVZD0SLXP-SDBaRE&callback=initMap"
-              ></script>
-            </div>
+            <div id="map" style={{ height: '400px', width: '100%' }}></div>
           </div>
         </div>
 
