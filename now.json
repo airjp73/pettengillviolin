@@ -1,7 +1,7 @@
 {
   "name": "pettengillviolin",
   "version": 2,
-  "alias": ["pettengillviolin.com"],
+  "alias": ["pettengillviolin.com", "www.pettengillviolin.com"],
   "build": {
     "env": {
       "TWILIO_ACCOUNT_SID": "@twilio-account-sid",
